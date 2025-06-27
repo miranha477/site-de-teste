@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #f4f9ff;
+  color: #003366;
+}
+
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+  height: 60px;
+}
+
+main {
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+#form-add input,
+#form-add input[type="number"],
+#form-add textarea,
+#chat input[type="text"] {
+  padding: 0.5rem;
+  margin: 0.25rem 0.25rem 0.5rem 0.25rem;
+  border-radius: 8px;
+  border: 1px solid #0077cc;
+  width: calc(50% - 1rem);
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+#form-add textarea {
+  width: 100%;
+}
+
+#chat input#messageInput {
+  width: calc(70% - 1rem);
+}
+
+#chat input#username {
+  width: calc(30% - 1rem);
+}
+
+#form-add button,
+#chat button {
+  padding: 0.5rem 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+#chat button {
+  background-color: #0077cc;
+}
+
+#estoque .categoria {
+  border: 2px solid #0077cc;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: white;
+}
+
+#estoque h2,
+#form-add h2,
+#chat h2 {
+  color: #005fa3;
+}
+
+#estoque ul {
+  padding-left: 1rem;
+  list-style-type: none;
+}
+
+#estoque li {
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.info-detalhes {
+  display: none;
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #555;
+}
+
+.botao-info,
+.botao-editar,
+.botao-apagar {
+  margin-left: 0.5rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.botao-info {
+  background-color: #0077cc;
+  color: white;
+}
+
+.botao-editar {
+  background-color: #ffc107;
+  color: black;
+}
+
+.botao-apagar {
+  background-color: #dc3545;
+  color: white;
+}
+
+#chat {
+  margin-top: 2rem;
+}
+
+#messages {
+  border: 2px solid #0077cc;
+  background: #ffffff;
+  border-radius: 10px;
+  height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #0077cc;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  #form-add input,
+  #form-add textarea,
+  #chat input[type="text"] {
+    width: 100%;
+  }
+  #messageInput {
+    margin-bottom: 0.5rem;
+  }
+}
